@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+    $(document).on("pagecontainerload", function(event,data){
+        $(window).on("orientationchange",function(){
+            if(window.orientation == 0) // Portrait
+            {
+                $("p").text("You are in " + event.orientation +"mode");
+            }
+            else // Landscape
+            {
+                $("p").text("You are in " + event.orientation +"mode");
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    
+<div data-role="page" id="pageone">
+    <div data-role="header">
+        <h1>Home</h1>
+        
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#pageone"class="ui-btn-active" data-icon="home">Home</a></li>
+                <li><a href="#pagetwo"class="ui-btn" data-icon="grid">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+  
+    <div data-role="main" class="ui-content">
+        
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim non orci pulvinar viverra. Maecenas in ultrices tortor. Integer volutpat eu sem in imperdiet. Praesent vulputate maximus semper. Aliquam erat volutpat. Phasellus malesuada tortor erat, quis facilisis eros maximus placerat. Phasellus laoreet in metus vitae consequat. Fusce eu lorem sed ipsum interdum volutpat. Quisque imperdiet sapien non purus convallis cursus. Phasellus at dolor ut ligula posuere blandit in id nibh. In rhoncus quam in molestie lobortis. Nam rhoncus diam vitae mi tempus dignissim.</p>
+        
+        <p class="orientation"></p>
+    </div>
+    
+    <div>
+        <div data-role="footer">
+            <h1>Springfield, MO, USA</h1>
+        </div>
+    </div>
+</div>
+            
+<div data-role="page" id="pagetwo">
+    <div data-role="header">
+        <h1>Contact</h1>
+        
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#pageone" class="ui-btn" data-icon="home">Home</a></li>
+                <li><a href="#pagetwo" class="ui-btn-active" data-icon="grid">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim non orci pulvinar viverra. Maecenas in ultrices tortor. Integer volutpat eu sem in imperdiet. Praesent vulputate maximus semper. Aliquam erat volutpat. Phasellus malesuada tortor erat, quis facilisis eros maximus placerat. Phasellus laoreet in metus vitae consequat. Fusce eu lorem sed ipsum interdum volutpat. Quisque imperdiet sapien non purus convallis cursus. Phasellus at dolor ut ligula posuere blandit in id nibh. In rhoncus quam in molestie lobortis. Nam rhoncus diam vitae mi tempus dignissim.</p>
+        
+        
+    </div>
+    
+    <div data-role="footer">
+        <h1>Springfield, MO, USA</h1>
+    </div>
+</div>
+    
+</body>
+</html>

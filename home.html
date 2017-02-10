@@ -12,11 +12,11 @@
         $(window).on("orientationchange",function(event){
             if(window.orientation == 0) // Portrait
             {
-                $("p.orientation").text("You are in " + event.orientation +"mode");
+                $("p.orientation").text("You are in portrait mode");
             }
             else // Landscape
             {
-                $("p.orientation").text("You are in " + event.orientation +"mode");
+                $("p.orientation").text("You are in landscape mode");
             }
         });
     });
@@ -67,7 +67,7 @@
         
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim non orci pulvinar viverra. Maecenas in ultrices tortor. Integer volutpat eu sem in imperdiet. Praesent vulputate maximus semper. Aliquam erat volutpat. Phasellus malesuada tortor erat, quis facilisis eros maximus placerat. Phasellus laoreet in metus vitae consequat. Fusce eu lorem sed ipsum interdum volutpat. Quisque imperdiet sapien non purus convallis cursus. Phasellus at dolor ut ligula posuere blandit in id nibh. In rhoncus quam in molestie lobortis. Nam rhoncus diam vitae mi tempus dignissim.</p>
         
-        
+        <p class="orientation"></p>
     </div>
     
     <div data-role="footer">

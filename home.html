@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -12,11 +12,11 @@
         $(window).on("orientationchange",function(){
             if(window.orientation == 0) // Portrait
             {
-                $("p").text("You are in " + event.orientation +"mode");
+                $("p.orientation").text("You are in " + event.orientation +"mode");
             }
             else // Landscape
             {
-                $("p").text("You are in " + event.orientation +"mode");
+                $("p.orientation").text("You are in " + event.orientation +"mode");
             }
         });
     });

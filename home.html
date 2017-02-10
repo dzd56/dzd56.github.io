@@ -8,8 +8,8 @@
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     
     <script>
-    $(document).on("pagecreate", function(event,data){
-        $(window).on("orientationchange",function(){
+    $(document).on("pagecreate", function(event){
+        $(window).on("orientationchange",function(event){
             if(window.orientation == 0) // Portrait
             {
                 $("p.orientation").text("You are in " + event.orientation +"mode");
